@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+div.note {
+    height: 250px;
+    width: 250px;
+    background-color: yellow;
+    margin: 2px 20px;
+    position: relative;
+    cursor: -webkit-grab;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note p {
+    font-size: 22px;
+    padding: 5px;
+    font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+}
+
+#edit {
+    background-color: yellow;
+    color: blue;
+}
+
+#remove {
+    background-color: yellow;
+    color: red;
+}
+
+#save {
+    background-color: yellow;
+    color: green;
+}
